@@ -121,7 +121,7 @@ const person = {
     name: 'John',
     age: 30
   };
-  
+  console.log(person);
 //   const namePropertyDescriptor = Object.getOwnPropertyDescriptor(person, 'name');
 //   console.log(namePropertyDescriptor);
   

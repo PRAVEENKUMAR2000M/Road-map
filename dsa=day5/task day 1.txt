@@ -1,0 +1,34 @@
+HTTP/1.1: The Legacy Protocol
+	One Request at a Time: In HTTP/1.1, a web browser can only request one resource at a time from a server. This leads to a phenomenon known as the "head-of-line blocking," where a slow-loading resource can delay the loading of other resources on a page.
+
+	Multiple Connections: To work around the single-request limitation, browsers open multiple parallel connections to a server. However, this can be inefficient, as it consumes more resources and increases latency.
+
+	Header Overhead: Each HTTP request and response in HTTP/1.1 carries a significant amount of redundant header information, which can be substantial for small resources.
+
+	No Built-in Compression: HTTP/1.1 lacks built-in support for header compression, resulting in additional overhead.
+
+HTTP/2: The Modern Web Protocol
+	To address the limitations of HTTP/1.1, HTTP/2 was introduced in 2015. It builds upon the foundation of its predecessor while introducing several key improvements:
+
+	Multiplexing: HTTP/2 allows multiple requests and responses to be sent and received in parallel over a single connection. This eliminates head-of-line blocking and significantly improves page load times, especially for complex websites.
+
+	Header Compression: HTTP/2 features efficient header compression, reducing the overhead associated with header data.
+
+	Server Push: In HTTP/2, servers can push resources to the client's cache proactively. This means that a server can send resources (e.g., CSS, JavaScript) to the client before they are requested, further reducing latency.
+
+	Prioritization: HTTP/2 allows for prioritization of requests, ensuring that more critical resources are loaded first. This enhances the user experience, as important content becomes available sooner.
+
+	Binary Protocol: HTTP/2 uses a binary protocol, which is more efficient to parse and results in faster and more reliable connections.
+
+	Backward Compatibility: HTTP/2 is designed to be backward-compatible with HTTP/1.1, so websites can gradually transition to the new protocol without breaking existing systems.
+
+Write a blog about objects and its internal representation in JavaScript
+
+const person = {
+    name: 'John',
+    age: 30
+  };
+  console.log(person);
+
+output: { name: 'John', age: 30 }
+
