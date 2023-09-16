@@ -103,12 +103,12 @@
 //   // Test the function with input 5
 //   printNaturalNumbers(5);
 
-function print(N){
-if(N==0) return;
-    console.log(N);
-    print(N-1);
+// function print(N){
+// if(N==0) return;
+//     console.log(N);
+//     print(N-1);
 
-}return print(10);
+// }return print(10);
 
 
 // function sayHello(N){
@@ -116,3 +116,13 @@ if(N==0) return;
 //     console.log("hello");
 //     sayHello(N-1);
 // } return sayHello(3);
+
+const person = {
+    name: 'John',
+    age: 30
+  };
+  
+//   const namePropertyDescriptor = Object.getOwnPropertyDescriptor(person, 'name');
+//   console.log(namePropertyDescriptor);
+  
+console.log(person);
