@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let xhr = new XMLHttpRequest();
+    
+        //open a connetion
+        xhr.open("GET","https://restcountries.com/v3.1/all", true);
+    
+    
+        //after the request is process
+        xhr.onload = function(){
+            let  responseObject = JSON.parse(this.responseText)
+            for(let country of responseObject){
+                console.log(country.flag)
+            }
+        }
+    
+        xhr.send();
+    </script>    
+</body>
+</html>

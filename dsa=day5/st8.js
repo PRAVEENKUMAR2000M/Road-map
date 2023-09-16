@@ -123,18 +123,31 @@
 //   };
 //   console.log(person);
 
-const jsonData = {
-    name: "John",
-    age: 30,
-    city: "New York",
-    hobbies: ["Reading", "Hiking", "Gaming"],
-  }
-//   for (const key in jsonData) {
-//     console.log(key, jsonData[key]);
+// const jsonData = {
+//     name: "John",
+//     age: 30,
+//     city: "New York",
+//     hobbies: ["Reading", "Hiking", "Gaming"],
 //   }
-for (const hobby of jsonData.hobbies) {
-    console.log(hobby);
-  }
+
+// for (const hobby of jsonData.hobbies) {
+//     console.log(hobby);
+//   }
   
   
+
+let obj1 = { name: "person1", age: 5 };
+let obj2 = { age: 5, name: "person1" };
+
+// Convert JSON objects to strings
+let obj1String = JSON.stringify(obj1);
+let obj2String = JSON.stringify(obj2);
+
+// Compare the JSON strings
+if (obj1String === obj2String) {
+  console.log("The two JSON objects are equal.");
+} else {
+  console.log("The two JSON objects are not equal.");
+}
+
   
