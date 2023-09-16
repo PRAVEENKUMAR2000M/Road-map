@@ -117,12 +117,24 @@
 //     sayHello(N-1);
 // } return sayHello(3);
 
-const person = {
-    name: 'John',
-    age: 30
-  };
-  console.log(person);
-//   const namePropertyDescriptor = Object.getOwnPropertyDescriptor(person, 'name');
-//   console.log(namePropertyDescriptor);
+// const person = {
+//     name: 'John',
+//     age: 30
+//   };
+//   console.log(person);
+
+const jsonData = {
+    name: "John",
+    age: 30,
+    city: "New York",
+    hobbies: ["Reading", "Hiking", "Gaming"],
+  }
+//   for (const key in jsonData) {
+//     console.log(key, jsonData[key]);
+//   }
+for (const hobby of jsonData.hobbies) {
+    console.log(hobby);
+  }
   
-console.log(person);
+  
+  
