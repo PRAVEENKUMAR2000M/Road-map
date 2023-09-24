@@ -1,0 +1,60 @@
+/* .Header{
+    position: fixed;
+    top: 0;
+
+
+}
+.content{
+    margin-top: 100px;
+    padding: 10px;
+} */
+
+/* .relative{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid green;
+        
+}
+.absolute{
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    width: 200px;
+    height: 100px;
+    border: 3px solid green;
+} */
+
+/* .sticky{
+    position: sticky;
+    top: 0px;
+    padding: 3px;
+    background-color: green;
+    border: 3px solid red;
+    
+
+} */
+
+/* .grandparent{
+    padding: 20px;
+    border: 3px solid green;
+}
+.parent{
+    padding: inherit;
+    border: inherit;
+}
+.child{
+    padding: inherit;
+    border: inherit;
+} */
+
+/* body{
+    background-image: linear-gradient(to right, blue, red);
+} */
+
+#gradient{
+    height: 200px;
+    width: 200px;
+    background-image: conic-gradient(red, green, blue, black)
+   
+}

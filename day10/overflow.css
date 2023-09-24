@@ -1,0 +1,22 @@
+/* .overflow{
+    width: 200px;
+    height: 100px;
+    border: 2px solid green;
+    background-color: lightseagreen;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.overflow-scroll{
+    overflow: scroll;
+}
+.overflow-auto{
+    overflow: auto;
+} */
+
+.container{
+    width: 80%;
+}
+.reponsive-image{
+    width: 100%;
+}

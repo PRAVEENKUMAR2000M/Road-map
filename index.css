@@ -1,0 +1,28 @@
+
+p{
+    color: red;
+}
+#para1{
+    color: red; 
+}
+#para2{
+    color: green;
+}
+#para3{
+    color: blue; 
+}
+.italic{
+    font-style: italic;
+
+}
+
+.bolder{
+    font-weight: bolder;
+}
+/* #headingID{
+    color: green;
+} */
+.headingclass{
+    color: blue;
+}
+

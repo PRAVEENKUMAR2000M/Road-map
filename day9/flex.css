@@ -1,0 +1,26 @@
+.container{
+    border: 2px solid green;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+.green, .blue, .red{
+    padding: 30px;
+    flex-basis: 80px;
+    margin: 20px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    flex-basis: 180px;
+
+}
+.green{
+    background-color: green;
+    /* flex-grow: 1; */
+}
+.blue{
+    background-color: blue;
+    /* flex-grow: 2; */
+}
+.red{
+    background-color: red;
+}   
