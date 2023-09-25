@@ -126,25 +126,52 @@
 
 
 
-let list = document.createElement("ul");
-let listItem1 = document.createElement("li");
-listItem1.textContent = "item 1";
-list.appendChild(listItem1);
-document.body.append(listItem1);
+// let list = document.createElement("ul");
+// let listItem1 = document.createElement("li");
+// listItem1.textContent = "item 1";
+// list.appendChild(listItem1);
+// document.body.append(listItem1);
 
-let listItem2 = document.createElement("li");
-listItem2.textContent = "item 2";
-list.appendChild(listItem2);
-document.body.append(listItem2);
-
-
-let listItem3 = document.createElement("li")
-listItem3.textContent = "item3"
-list.appendChild(listItem3);
-document.body.append(list);
+// let listItem2 = document.createElement("li");
+// listItem2.textContent = "item 2";
+// list.appendChild(listItem2);
+// document.body.append(listItem2);
 
 
+// let listItem3 = document.createElement("li")
+// listItem3.textContent = "item3"
+// list.appendChild(listItem3);
+// document.body.append(list);
 
 
 
 
+// let highlightsElements = document.getElementsByClassName("highlights");
+// for (let index = 0; index < highlightsElements.length; index++){
+//     highlightsElements[index].style.backgroundColor = 'blue'
+// }
+
+// let listitem = ["Tea", "coffee", "blackcoffee", "greenTea"];
+// let list = document.createElement("ol");
+// listitem.forEach(data => {
+//     let listitem = document.createElement("li");
+//     listitem.textContent = data;
+//     list.appendChild(listitem);
+// })
+// document.getElementById("listContainer").appendChild(list);
+
+// let menucard = ["tea", "coffee", "juice", "cake"];
+// let list = document.createElement("ol");
+// menucard.forEach(data => {
+//     let menucard = document.createElement("li");
+//     menucard.textContent = data;
+//     list.appendChild(menucard);
+// })
+// document.getElementById("listContainer").appendChild(list);
+
+
+
+// let paragraph = document.querySelectorAll(".highlights");
+// console.log(paragraph);
+
+document.getElementById("container").innerHTML = "<b>hi this is pravyn marley </b>"
