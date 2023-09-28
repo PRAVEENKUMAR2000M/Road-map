@@ -160,6 +160,11 @@
 // })
 // document.getElementById("listContainer").appendChild(list);
 
+
+
+
+// div was created in this case
+
 // let menucard = ["tea", "coffee", "juice", "cake"];
 // let list = document.createElement("ol");
 // menucard.forEach(data => {
@@ -171,7 +176,24 @@
 
 
 
+//div was not created in this case;
+
+// let menucard = ["tea", "coffee", "juice", "cake"];
+// let firstDiv = document.createElement("div");
+
+// let list = document.createElement("ol");
+// menucard.forEach(data => {
+//     let menucard = document.createElement("li");
+//     menucard.textContent = data;
+//     list.appendChild(menucard);
+// })
+// document.body.appendChild(list);
+
+
+
+
+
 // let paragraph = document.querySelectorAll(".highlights");
 // console.log(paragraph);
 
-document.getElementById("container").innerHTML = "<b>hi this is pravyn marley </b>"
+// document.getElementById("container").innerHTML = "<b>hi this is pravyn marley </b>"
