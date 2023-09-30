@@ -11,11 +11,11 @@
 
 
 // callback function
-// let Array = [1, 2, 3, 4, 5];
+// let numbers = [1, 2, 3, 4, 5];
 // function printItems(value, index, Array) {
-//   console.log(Array);
+//   console.log(value);
 // }
-// Array.forEach(printItems);
+// numbers.forEach(printItems);
 
 
 // let array = new Array(1, 2, 3, 4, 5);
@@ -26,10 +26,13 @@
 // numbers.push(2);
 // numbers.push(3);
 // numbers.push(4);
-// numbers.forEach((value, index, array) => {
-//   console.log(value, index, array);
-
-// })
+// // numbers.forEach((value, index, array) => {
+// //   console.log(value, index, array);
+// // })
+// function printItems(value, index, Array) {
+//   console.log(value, index, Array);
+// }
+// numbers.forEach(printItems);
 
 
 
@@ -41,7 +44,7 @@
 //   console.log('anther function called');
 // }
 // function handleClick(anotherFunction) {
-//   console.log("button clicked");
+//   console.log("function");
 //   anotherFunction();
 // }
 // button.addEventListener('click', function () {
@@ -141,11 +144,18 @@
 // });
 
 
-function delayedGreeting(name, callback) {
-  setTimeout(function () {
-    callback(`hello ${name}`);
-  },5000);
-}
-delayedGreeting("praveen", (message) => {
-  console.log(message);
-})
+// function delayedGreeting(name, callback) {
+//   setTimeout(function () {
+//     callback(`hello ${name}`);
+//   },5000);
+// }
+// delayedGreeting("praveen", (message) => {
+//   console.log(message);
+// })
+
+
+
+
+
+
+

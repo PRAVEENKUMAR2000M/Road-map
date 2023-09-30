@@ -1,0 +1,49 @@
+/<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+</head>
+<body>
+
+
+    <script>
+
+// let trust = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         resolve("success");
+//     },2000)
+// })
+// console.log(trust);
+
+// setTimeout(()=>{
+//     console.log(trust);
+// },4000)
+
+
+
+
+
+let trust = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        reject("Error");
+    },3000)
+})
+
+console.log(trust);
+
+setTimeout(()=>{
+    console.log(trust);
+},4000)
+trust.then(
+    (message)=>console.log(message),
+    (message)=>console.log(message),
+)
+
+
+
+
+    </script>
+</body>
+</html>
