@@ -102,12 +102,14 @@
 // }
 
 
-//template literals
+//template litera
 
 let name = "praveen"
 let age = 24;
-let message = `hello my ${name} and iam ${age} old`;
+// let message = `hello my ${name} and iam ${age} old`;
 
+let message = "hello iam"  +  "24 years old"
+console.log(message);
 
 
 
