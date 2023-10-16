@@ -1,0 +1,30 @@
+#heading{
+    background-color: yellow;
+    height: 50px;
+    width: auto;
+    margin-top: 0px;
+}
+
+#paragraph{
+    position:relative;
+    top: 0;
+    right: 70%;
+    left: 350px;
+    width: 800px;
+
+    /* margin: 0 auto; */
+    /* text-align: right; */
+
+    /* text-align: right; */
+        /* word-wrap: break-word; */
+    
+
+}
+#alignment{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 300px;
+    padding: 10px;
+}
+
