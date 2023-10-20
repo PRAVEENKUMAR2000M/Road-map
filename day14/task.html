@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" title="text/css" href="./kjjkj.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     
@@ -65,7 +67,44 @@
 
 
 
+<style>
+    .calculator{
+        height: 350px;
+        width: 300px;
+        border-width: 5px;
+        border-collapse: collapse;
 
+    }
+    #display{
+        padding-left: 0px;
+        height: 40px;
+    }
+    
+.buttons{
+      font-size: 15px;
+      padding-top: 20px;
+}
+#operators{
+    /* font-weight: bold;
+    font-size: 60px; */
+}
+
+#btn{
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 10px; 
+    border: 10px ;
+}
+/* #btn-1{
+    
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 60px; 
+    border: 10px;
+    
+} */
+
+</style>
 
 
 
@@ -75,23 +114,27 @@
         <input type="text" id="display" readonly>
        
         <div class="buttons">
-            <button onclick="clearDisplay()">C</button>
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('+')">+</button>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('-')">-</button>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('*')">*</button>
-            <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="calculateResult()">=</button>
-            <button onclick="appendToDisplay('/')">/</button>
+            <div id="operators">
+            <button id="btn" style="color: blue;" onclick="clearDisplay()">C</button>
+            <button id="btn" style="color: blue;" onclick="appendToDisplay('+')">+</button>
+            <button id="btn" style="color: blue;" onclick="appendToDisplay('-')">-</button>
+            <button id="btn" style="color: blue;" onclick="appendToDisplay('*')">*</button><br>
+            <button id="btn" onclick="appendToDisplay('7')">7</button>
+            <button id="btn" onclick="appendToDisplay('8')">8</button>
+            <button id="btn" onclick="appendToDisplay('9')">9</button>
+            <button id="btn" style="color: blue;" onclick="appendToDisplay('/')">/</button><br>
+            <button id="btn" onclick="appendToDisplay('4')">4</button>
+            <button id="btn" onclick="appendToDisplay('5')">5</button>
+            <button id="btn" onclick="appendToDisplay('6')">6</button>
+            <button id="btn" style="color: blue;" onclick="appendToDisplay('.')">.</button><br>
+            <button id="btn" onclick="appendToDisplay('1')">1</button>
+            <button id="btn" onclick="appendToDisplay('2')">2</button>
+            <button id="btn" onclick="appendToDisplay('3')">3</button>
+            <button id="btn" style="color: blue;" onclick="calculateResult()">√</button><br>
+            <button id="btn" onclick="calculateResult()">θ</button>
+            <button id="btn" onabort="calculateResult()">00</button>
+            <button style="padding-right: 50px; padding-left: 50px; background-color:aqua" onclick="calculateResult()">=</button>
+            </div>
 
         </div>
     </div>
@@ -102,5 +145,9 @@
    
 
     <script src="task.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
