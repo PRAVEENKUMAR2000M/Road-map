@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form and Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        form {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="myForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" required><br>
+
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" required><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female<br>
+
+        <label for="food">Choice of Food (Select at least 2):</label><br>
+        <input type="checkbox" name="food" value="Pizza">Pizza
+        <input type="checkbox" name="food" value="Burger">Burger
+        <input type="checkbox" name="food" value="Pasta">Pasta
+        <input type="checkbox" name="food" value="Sushi">Sushi
+        <input type="checkbox" name="food" value="Salad">Salad<br>
+
+        <label for="state">State:</label>
+        <select id="state">
+            <option value="New York">New York</option>
+            <option value="California">California</option>
+            <option value="Texas">Texas</option>
+        </select><br>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Gender</th>
+                <th>Food</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        const form = document.getElementById('myForm');
+        const table = document.getElementById('dataTable');
+        const tbody = table.querySelector('tbody');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const address = document.getElementById('address').value;
+            const pincode = document.getElementById('pincode').value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+            const foodItems = document.querySelectorAll('input[name="food"]:checked');
+            const food = [...foodItems].map(item => item.value).join(', ');
+            const state = document.getElementById('state').value;
+            const country = document.getElementById('country').value;
+
+            const newRow = tbody.insertRow();
+            newRow.innerHTML = `<td>${firstName}</td><td>${lastName}</td><td>${address}</td><td>${pincode}</td><td>${gender}</td><td>${food}</td><td>${state}</td><td>${country}</td>`;
+
+            // Clear the form fields
+            form.reset();
+        });
+    </script>
+</body>
+
+</html>
