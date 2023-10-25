@@ -10,61 +10,6 @@
 </head>
 <body>
     
-    <!-- <div>
-        <label>select country</label>
-        <select>
-            <option>select country</option>
-        </select>
-        <br></br>
-        <label>select the state</label>
-        <select>
-            <option>select state</option>
-        </select>
-        <br></br>
-        <label>select the distric</label>
-        <select>
-            <option>select distric</option>
-        </select>
-    </div> -->
-
-
-    <!-- <div>
-        <label>
-            select the country:
-            <select id="countryDropdown">
-                <option>
-                    select country
-                    <option>
-                        INDIA
-                    </option>
-                    <option>
-                        Russia
-                    </option>
-                </option>
-            </select>
-        </label>
-        <br></br>
-        <label>
-            select the state:
-            <select id="stateDropdown">
-                <option>
-                    select state
-                </option>
-            </select>
-        </label>
-        <br></br>
-        <label>
-            select the distric:
-            <select id="districDropdown">
-            <option>
-                select distric
-            </option>
-            </select>
-        </label>
-    </div> -->
-
-
-
 
 
 <style>
@@ -95,14 +40,10 @@
     margin-right: 10px; 
     border: 10px ;
 }
-/* #btn-1{
-    
-    padding: 10px;
-    margin-left: 20px;
-    margin-right: 60px; 
-    border: 10px;
-    
-} */
+
+
+
+
 
 </style>
 
@@ -131,8 +72,8 @@
             <button id="btn" onclick="appendToDisplay('2')">2</button>
             <button id="btn" onclick="appendToDisplay('3')">3</button>
             <button id="btn" style="color: blue;" onclick="calculateResult()">√</button><br>
-            <button id="btn" onclick="calculateResult()">θ</button>
-            <button id="btn" onabort="calculateResult()">00</button>
+            <button id="btn" onclick="appendToDisplay('0')">0</button>
+            <button id="btn" onabort="appendToDisplay('00')">00</button>
             <button style="padding-right: 50px; padding-left: 50px; background-color:aqua" onclick="calculateResult()">=</button>
             </div>
 
